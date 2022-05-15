@@ -1,3 +1,16 @@
 table, th, td {
-    border:1px solid black;
-  }
+    border: 1px solid black;
+}
+
+.input-field {
+  display: flex;
+  max-width: 270px;
+}
+
+.input{
+  margin-left: auto;
+}
+
+#form-content {
+  display: none;
+}

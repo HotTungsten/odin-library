@@ -9,13 +9,37 @@
     <script src="library.js" defer></script>
 </head>
 <body>
-    <table id="book-table">
-        <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Pages</th>
-            <th>Read Status</th>
-        </tr>
-    </table>
+    <div class="content">
+        <button id="open-book" onclick="openForm()">Add Book</button>
+        <div id="form-content">
+            <form class="add-book-form" onsubmit="return false;">
+                <div class="input-field">
+                    <label for="title">Title:</label>
+                    <input type="text" name="title" class="input" id="title-input">
+                </div>
+                <div class="input-field">
+                    <label for="author">Author:</label>
+                    <input type="text" name="author" class="input" id="author-input">
+                </div>
+                <div class="input-field">
+                    <label for="pages">Pages:</label>
+                    <input type="text" name="pages" class="input" id="page-input">
+                </div>
+                <div class="input-field">
+                    <label for="read-status">Read Status:</label>
+                    <input type="text" name="read-status" class="input" id="read-input">
+                </div>
+                <button id="add-book-button">Add Book</button>
+            </form>
+        </div>
+        <table id="book-table">
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Read Status</th>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
